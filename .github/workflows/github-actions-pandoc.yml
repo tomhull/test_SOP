@@ -8,10 +8,12 @@ jobs:
         uses: actions/checkout@v2
           
       - name: Load pandoc
-        uses: docker://pandoc/latex:2.9
+        uses: docker://pandoc/core:2.9
         with:
           args: --standalone --output=index.html example.md
           
       - name: Upload files
         uses: actions/upload-artifact@v2
-        path: index.html
+        with:
+          name: index
+          path: index.html
