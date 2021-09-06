@@ -18,4 +18,4 @@ jobs:
           
       - name: Commit file
         run: |
-          echo git ls
+          git ls
