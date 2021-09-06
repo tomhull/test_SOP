@@ -2,8 +2,11 @@
 
 testing repository for Ocean gliders SOPs
 
-You can read the test document [here](example.md)
+You can read the test document [here](example.md).
 
+You can find a link to the latest PDF version [here](https://github.com/tomhull/test_SOP/releases/latest/download/example.pdf).
+
+Here is a picture of an octopus
 ![octopus](images/octopus.png)
 
 ## How to contribute
