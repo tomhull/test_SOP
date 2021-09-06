@@ -1,5 +1,5 @@
 name: GitHub Actions Pandoc Demo
-#on: [push]
+#on: [push] # be careful, don't get in a commit-loop :D
 on: [workflow_dispatch]
 jobs:
   convert_via_pandoc:
@@ -18,4 +18,6 @@ jobs:
           
       - name: Commit file
         run: |
-          git ls
+          git add example.md
+          git commit -m "updated via automated pandoc build"
+          git push
