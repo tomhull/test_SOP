@@ -12,7 +12,7 @@ look like:
   * this one
   * that one
   * the other one
-  * i would do it like this!
+  * i would do it like this!das
 
 Note that --- not considering the asterisk --- the actual text
 content starts at 4-columns in.
@@ -66,3 +66,6 @@ for i in range(10):
 ~~~
 
 OK
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTA1Nzc2MTcwNV19
+-->
