@@ -4,7 +4,13 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "FILE=example.md" >> $GITHUB_ENV
-      - uses: docker://pandoc/latex:2.9
+      - name: Get files
+        uses: actions/checkout@v2
+          
+      - name: Load pandoc
+        uses: docker://pandoc/latex:2.9
         with:
-          args: --standalone --output=index.html ${{ env.FILE }}
+          args: --standalone --output=index.html example.md
+          
+      - name: Upload files
+        uses: actions/upload-artifact@v2
