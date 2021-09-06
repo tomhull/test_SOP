@@ -14,3 +14,4 @@ jobs:
           
       - name: Upload files
         uses: actions/upload-artifact@v2
+        path: index.html
