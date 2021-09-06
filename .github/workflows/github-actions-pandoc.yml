@@ -18,6 +18,8 @@ jobs:
           
       - name: Commit file
         run: |
+          git config --global user.name 'Github actions bot'
+          git config --global user.email ''
           git add example.md
-          git commit -m "updated via automated pandoc build"
+          git commit -m "automated pandoc build"
           git push
