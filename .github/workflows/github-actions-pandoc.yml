@@ -1,5 +1,6 @@
 name: GitHub Actions Pandoc Demo
-on: [push]
+#on: [push]
+on: [workflow_dispatch]
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-latest
@@ -10,10 +11,11 @@ jobs:
       - name: Load pandoc
         uses: docker://pandoc/core:2.9
         with:
-          args: --standalone --output=index.html example.md
+          args: >-  # allows you to break string into multiple lines
+            --standalone
+            --output=index.html
+            example.md
           
-      - name: Upload files
-        uses: actions/upload-artifact@v2
-        with:
-          name: index
-          path: index.html
+      - name: Commit file
+        run: |
+          echo git ls
