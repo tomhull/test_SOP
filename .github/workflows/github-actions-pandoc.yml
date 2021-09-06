@@ -4,7 +4,7 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - uses: docker://pandoc/core:2.9
+      - run: echo "FILE=example.md" >> $GITHUB_ENV
+      - uses: docker://pandoc/latex:2.9
         with:
-          args: --standalone --output=index.html example.md
+          args: --standalone --output=index.html ${{ env.FILE }}
