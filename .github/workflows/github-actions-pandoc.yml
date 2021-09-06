@@ -7,8 +7,4 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - uses: docker://pandoc/core:2.9
         with:
-          args: >-
-            pandoc
-            --standalone
-            --output=index.html
-            example.md
+          args: --standalone --output=index.html example.md
