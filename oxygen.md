@@ -7,6 +7,8 @@ version: 0.2
 
 # Introduction
 
+A test references @Bittig2018, [@Hull2016].
+
 ## Aanderaa Optodes
 
 ## RBR coda T.ODO
