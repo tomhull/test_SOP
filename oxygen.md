@@ -3,7 +3,7 @@ title: OceanGliders standard operating procedure: Oxygen
 version: 0.2
 ---
 
-![oceangliders](images\logo-ocean-gliders.png)
+![oceangliders](images/logo-ocean-gliders.png)
 
 # Introduction
 
